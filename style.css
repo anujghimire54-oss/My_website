@@ -1,0 +1,53 @@
+.dotted td {
+    position: relative;
+    vertical-align: middle;
+}
+
+.dotted td::after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border-bottom: 2px dotted black;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+.Krishna td {
+    background-color: aqua;
+}
+
+th {
+    background-color: burlywood;
+}
+.yellow{
+    background-color:yellow;
+}
+.purple{
+    background-color:cornflowerblue;
+}
+.red{
+    background-color: red;
+}
+.bold{
+    font-weight: bold;
+}
+.watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-30deg);
+
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    opacity: 0.15;
+
+    z-index: -1;
+    pointer-events: none;
+}
